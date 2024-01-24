@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #faebd7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gimnasio.Controllers.InicioController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="286.0" style="-fx-background-color: #040225;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="222.0" layoutX="30.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/gym.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="163.0" prefHeight="128.0" prefWidth="225.0" text=" Gimnasio Health" textAlignment="CENTER" textFill="#fffcfc">
+               <font>
+                  <Font name="Broadway" size="24.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="22.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transforma tu cuerpo. Eleva tu energía. Supera tus límites." textAlignment="CENTER" wrappingWidth="226.78533935546875">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="empleadosButton" layoutX="54.0" layoutY="366.0" mnemonicParsing="false" onAction="#empleados" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #040225;" text="Acceso empleados" textFill="#fffefe" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="129.0" layoutX="108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#d77519" layoutX="112.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Ya eres usuario?" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="EntrarButton" layoutX="105.0" layoutY="217.0" mnemonicParsing="false" onAction="#Entrar" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #ff4500;" text="Entrar" textFill="#fffefe" />
+            <Text fill="#d77519" layoutX="25.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regístrate y descubre todos nuestros servicios" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="RegistroButton" layoutX="105.0" layoutY="303.0" mnemonicParsing="false" onAction="#Registro" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #ff4500;" text="Registrase" textFill="#fffefe" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

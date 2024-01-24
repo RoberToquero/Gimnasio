@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane opacity="0.7" prefHeight="466.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gimnasio.Controllers.RegistroController">
+   <children>
+      <ImageView fitHeight="477.0" fitWidth="486.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Salagym.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nombreTextField" layoutX="165.0" layoutY="10.0" prefHeight="32.0" prefWidth="180.0" promptText="Nombre y Apellido" />
+      <TextField fx:id="emailTextField" layoutX="165.0" layoutY="63.0" prefHeight="32.0" prefWidth="180.0" promptText="Email" />
+      <TextField fx:id="userTextField" layoutX="172.0" layoutY="244.0" prefHeight="32.0" prefWidth="180.0" promptText="UserName" />
+      <Text fill="#6a82f7" layoutX="119.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de usuario:" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#6a82f7" layoutX="31.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Apellido" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#6a82f7" layoutX="75.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#6a82f7" layoutX="29.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de usuario" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordTextField" layoutX="172.0" layoutY="293.0" prefHeight="32.0" prefWidth="180.0" promptText="Password" />
+      <Text fill="#6a82f7" layoutX="29.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="registrarseButton" layoutX="172.0" layoutY="345.0" mnemonicParsing="false" onAction="#registrarse" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2C20E6;" text="Registrarse" textFill="#fffefe" />
+      <Button fx:id="cancelarButton" layoutX="172.0" layoutY="388.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2C20E6;" text="Cancelar" textFill="#fffefe" />
+      <Button fx:id="borrarButton" layoutX="172.0" layoutY="431.0" mnemonicParsing="false" onAction="#borrar" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2C20E6;" text="Borrar" textFill="#fffefe" />
+      <ComboBox fx:id="cbTipo" layoutX="172.0" layoutY="148.0" prefHeight="26.0" prefWidth="169.0" promptText="Elige el tipo deseado" />
+   </children>
+</AnchorPane>
